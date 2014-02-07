@@ -1,0 +1,7 @@
+Main-Class: davlink.DavLink
+Application-Name: DavLink
+Permissions: all-permissions
+Codebase: *
+Trusted-Only: true
+Trusted-Library: true
+
