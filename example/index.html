@@ -38,6 +38,11 @@ function generate_default_prefs() {
 <ul>
 <li><a href="javascript:startFile('http://test-davlink.lino-framework.org/test.rtf')">test.rtf</a>
 should launch your LibreOffice or Word application on that file.
+
+Note that you won't be able to write the file back to our server since
+we did not set up a public WebDAV access.  But if your office
+application launches, then your test was successful.
+
 </li>
 <li><a href="javascript:generate_default_prefs()">generate_default_prefs()</a>
 should scan (or re-scan) your hard-disk for launchers.
