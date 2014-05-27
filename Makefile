@@ -4,8 +4,6 @@ JFLAGS = -Xlint:unchecked
 
 
 JAVAC = javac
-#ALIAS = mykey
-ALIAS = codegears
 
 .SUFFIXES: .java .class
 
@@ -18,13 +16,17 @@ SIGNERFLAGS = -tsa http://timestamp.globalsign.com/scripts/timestamp.dll -storep
 
 SOURCES = davlink/DavLink.java
 
-default: jars
+default: jars_mykey
 
 classes: $(SOURCES:.java=.class)
 
-jars: classes
+jars_mykey: classes
 	jar cvmf Manifest.txt $(JARFILE) davlink
-	jarsigner $(SIGNERFLAGS) $(JARFILE) $(ALIAS)
+	jarsigner $(JARFILE) mykey
+
+jars_codegears: classes
+	jar cvmf Manifest.txt $(JARFILE) davlink
+	jarsigner $(SIGNERFLAGS) $(JARFILE) codegears
 
 
 clean:
