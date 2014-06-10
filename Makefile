@@ -16,7 +16,7 @@ SIGNERFLAGS = -tsa http://timestamp.globalsign.com/scripts/timestamp.dll -storep
 
 SOURCES = davlink/DavLink.java
 
-default: jars_mykey
+default: jars_codegears
 
 classes: $(SOURCES:.java=.class)
 
