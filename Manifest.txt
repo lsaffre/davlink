@@ -2,7 +2,6 @@ Main-Class: davlink.DavLink
 Application-Name: DavLink
 Permissions: all-permissions
 Codebase: *
-Application-Library-Allowable-Codebase: *
 Trusted-Only: true
 Trusted-Library: true
 Caller-Allowable-Codebase: *
