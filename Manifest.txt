@@ -5,3 +5,4 @@ Codebase: *
 Application-Library-Allowable-Codebase: *
 Trusted-Only: true
 Trusted-Library: true
+Caller-Allowable-Codebase: *
