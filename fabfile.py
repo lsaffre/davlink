@@ -3,7 +3,10 @@ setup_from_fabfile(globals())
 
 env.revision_control_system = 'git'
 
-jb = JarBuilder('DavLink.jar', 'davlink')
+from atelier.jarbuilder import JarBuilder
+jb = JarBuilder(
+    'DavLink.jar', 'davlink',
+    'http://timestamp.globalsign.com/scripts/timestamp.dll')
 
 
 @task
